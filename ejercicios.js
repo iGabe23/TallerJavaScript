@@ -130,6 +130,32 @@ function mostrar() {
 mostrar();
 */
 // Leer dos números, mostrar el mayor.
+/*
+let num1 = prompt(`Dame un primer numero`);
+let num2 = prompt(`Dame un segundo numero`);
 
+function mayor() {
+  if (num1 > num2) {
+    document.write(`${num1} es mayor`);
+  } else if (num1 == num2) {
+    document.write(`${num1} es igual a ${num2}`);
+  } else {
+    document.write(`${num2} es mayor`);
+  }
+}
+mayor();
+*/
 // Leer dos números, mostrar operaciones básicas (+,-,x,/,%,cuadrado).
+
 // Leer dos números, mostrar la suma dividido en la resta.
+
+var x = prompt(`Dame un primer numero`);
+var y = prompt(`Dame un segundo numero`);
+
+function operacion() {
+  var suma = x + y;
+  var resta = x - y;
+  document.write("Esta es tu suma" + suma + "y esta es tu resta" + resta);
+}
+
+operacion();
