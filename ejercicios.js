@@ -146,16 +146,36 @@ function mayor() {
 mayor();
 */
 // Leer dos números, mostrar operaciones básicas (+,-,x,/,%,cuadrado).
+/*
+let a = new Number(prompt(`Dame un primer numero`));
+let b = new Number(prompt(`Dame un segundo numero`));
 
+function operaciones() {
+  let suma = a + b;
+  let resta = a - b;
+  let multiplicacion = a * b;
+  let division = a / b;
+  document.write(
+    `Esta es su suma: ${suma}, esta es su resta: ${resta}, esta es su multiplicación: ${multiplicacion}, y esta es su dividisión: ${division}.`
+  );
+}
+
+operaciones();
+*/
 // Leer dos números, mostrar la suma dividido en la resta.
-
-var x = prompt(`Dame un primer numero`);
-var y = prompt(`Dame un segundo numero`);
+/*
+let a = new Number(prompt(`Dame un primer numero`));
+let b = new Number(prompt(`Dame un segundo numero`));
 
 function operacion() {
-  var suma = x + y;
-  var resta = x - y;
-  document.write("Esta es tu suma" + suma + "y esta es tu resta" + resta);
+  let suma = a + b;
+  let resta = a - b;
+  let resultado = suma / resta;
+  document.write(`Esta es su suma: ${suma}, esta es su resta: ${resta}. `);
+  document.write(
+    `Este es el resultado de la división entre la suma y la resta: ${resultado}`
+  );
 }
 
 operacion();
+*/
