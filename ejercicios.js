@@ -179,3 +179,13 @@ function operacion() {
 
 operacion();
 */
+
+//Pedir un número y mostrar los números pares desde 1 hasta n
+
+// Pedir un número, mostrar la suma total desde 1 hasta n.
+// Pedir un número, mostrar la suma de los números pares desde 1 hasta n.
+// Pedir un número, mostrar la suma de los números impares desde 1 hasta n.
+// Pedir un número, mostrar multiplos de 3 desde 1 hasta n.
+// Pedir un número, mostrar los números desde n hasta 0.
+// Pedir un número, mostrar los números desde 0 hasta n.
+// Pedir un número, mostrar su tabla de multiplicar de multiplicar desde 0 hasta 10.
