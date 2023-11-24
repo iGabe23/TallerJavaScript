@@ -181,6 +181,17 @@ operacion();
 */
 
 //Pedir un número y mostrar los números pares desde 1 hasta n
+function pares() {
+  let numero = prompt("Dame un número");
+  for (let i = 1; i <= numero; i++) {
+    if (i % 2 === 0) {
+      document.write(i + "<br>");
+    } else {
+      alert("Ingrese un número válido");
+    }
+  }
+}
+pares();
 
 // Pedir un número, mostrar la suma total desde 1 hasta n.
 // Pedir un número, mostrar la suma de los números pares desde 1 hasta n.
