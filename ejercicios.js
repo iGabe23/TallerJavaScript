@@ -181,22 +181,109 @@ operacion();
 */
 
 //Pedir un número y mostrar los números pares desde 1 hasta n
+/*
 function pares() {
   let numero = prompt("Dame un número");
   for (let i = 1; i <= numero; i++) {
     if (i % 2 === 0) {
       document.write(i + "<br>");
     } else {
-      alert("Ingrese un número válido");
+      //alert("Ingrese un número válido");
     }
   }
 }
 pares();
-
+*/
 // Pedir un número, mostrar la suma total desde 1 hasta n.
+/*
+function pares() {
+  let numero = prompt("Dame un número");
+  let suma = 0;
+  let resultado = "";
+  for (let i = 1; i <= numero; i++) {
+    if (i % 1 === 0) {
+      suma += i;
+      resultado += `${i} + `;
+    }
+  }
+  document.write(`${resultado.slice(0, -2)} = ${suma}`);
+}
+pares();
+*/
 // Pedir un número, mostrar la suma de los números pares desde 1 hasta n.
+/*
+function sumaDePares() {
+  let n = prompt("Dame un número");
+  let suma = 0;
+  let resultado = "";
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+      suma += i;
+      resultado += `${i} + `;
+    }
+  }
+  document.write(`${resultado.slice(0, -2)} = ${suma}`);
+}
+sumaDePares();
+*/
 // Pedir un número, mostrar la suma de los números impares desde 1 hasta n.
+/*
+function sumaDeImpares() {
+  let n = prompt("Dame un número");
+  let suma = 0;
+  let resultado = "";
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0) {
+      suma += i;
+      resultado += `${i} + `;
+    }
+  }
+  document.write(`${resultado.slice(0, -2)} = ${suma}`);
+}
+sumaDeImpares();
+*/
 // Pedir un número, mostrar multiplos de 3 desde 1 hasta n.
+/*
+function multiplos() {
+  let numero = prompt("Dame un número");
+  for (let i = 1; i <= numero; i++) {
+    if (i % 3 === 0) {
+      document.write(i + "<br>");
+    } else {
+      //alert("Ingrese un número válido");
+    }
+  }
+}
+multiplos();
+*/
 // Pedir un número, mostrar los números desde n hasta 0.
+/*
+function descendente() {
+  let numero = prompt("Dame un número");
+  for (numero; numero >= 0; numero--) {
+    document.write(numero + "<br>");
+  }
+}
+descendente();
+*/
 // Pedir un número, mostrar los números desde 0 hasta n.
-// Pedir un número, mostrar su tabla de multiplicar de multiplicar desde 0 hasta 10.
+/*
+function ascendente() {
+  let numero = prompt("Dame un número");
+  for (let i = 0; numero >= i; i++) {
+    document.write(i + "<br>");
+  }
+}
+ascendente();
+*/
+// Pedir un número, mostrar su tabla de multiplicar desde 0 hasta 10.
+/*
+function tablas() {
+  let numero = prompt("Dame un número");
+  for (let tabla = 0; tabla <= 10; tabla++) {
+    let frase = `${numero} * ${tabla} = ${numero * tabla} <br> `;
+    document.write(frase);
+  }
+}
+tablas();
+*/
