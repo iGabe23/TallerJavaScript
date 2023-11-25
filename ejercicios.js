@@ -287,3 +287,28 @@ function tablas() {
 }
 tablas();
 */
+// Programa que retorne el área de un cuadrado.
+
+const cuadradoArea = document.getElementById("cuadradoArea");
+const resultadoAreaCuadrado = document.getElementById("resultadoAreaCuadrado");
+
+cuadradoArea.addEventListener("submit", function (evento) {
+  evento.preventDefault();
+  let lado = cuadradoArea.lado.value;
+  let area = lado * lado;
+  resultadoAreaCuadrado.textContent = `El area de un cuadrado es su alto: ${lado} por su ancho: ${lado}, resultado = ${area}`;
+});
+
+// Programa que retorne el resultado de convertir grados Fahrenheit a Celsius. (32°F − 32) × 5/9 = 0°C
+
+const fahrenheitCelsius = document.getElementById("fahrenheitCelsius");
+const resultadoGradosCelsius = document.getElementById(
+  "resultadoGradosCelsius"
+);
+
+fahrenheitCelsius.addEventListener("submit", function (evento) {
+  evento.preventDefault();
+  let fahrenheit = fahrenheitCelsius.fahrenheit.value;
+  let celsius = ((fahrenheit - 32) * 5) / 9;
+  resultadoGradosCelsius.textContent = `${fahrenheit} Grados Fahrenheit equivalen a ${celsius} Grados Celsius.`;
+});
