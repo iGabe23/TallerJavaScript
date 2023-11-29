@@ -1,5 +1,7 @@
 "use strict";
 
+// Ejercicios
+
 /*Preguntar por nombre al usuario y saluder por nombre.
 Si el usuario no escribe su nombre, saludar: "Hola, desconocido.*/
 /*
@@ -312,3 +314,31 @@ fahrenheitCelsius.addEventListener("submit", function (evento) {
   let celsius = ((fahrenheit - 32) * 5) / 9;
   resultadoGradosCelsius.textContent = `${fahrenheit} Grados Fahrenheit equivalen a ${celsius} Grados Celsius.`;
 });
+
+// Ejercicios FIN
+
+// API
+const urlApi = "https://random-d.uk/api/v2/random";
+const $pato1 = document.getElementById("btn-pato1");
+const $pato2 = document.getElementById("btn-pato2");
+
+$pato1.addEventListener("click", obtenerPato1);
+
+$pato2.addEventListener("click", obtenerPato2);
+
+function obtenerPato1() {
+  fetch(urlApi)
+    .then((res) => res.json())
+    .then((obj) => console.log(obj))
+    .catch((error) => console.log(error));
+}
+
+async function obtenerPato2() {
+  try {
+    const res = await fetch(urlApi);
+    const obj = await res.json();
+    console.log(obj);
+  } catch (error) {
+    console.log(error);
+  }
+}
