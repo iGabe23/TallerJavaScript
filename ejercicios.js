@@ -315,9 +315,10 @@ fahrenheitCelsius.addEventListener("submit", function (evento) {
   resultadoGradosCelsius.textContent = `${fahrenheit} Grados Fahrenheit equivalen a ${celsius} Grados Celsius.`;
 });
 
-// Ejercicios FIN
+// Ejercicios FIN---------------------------------------
 
 // API
+/*
 const urlApi = "https://random-d.uk/api/v2/random";
 const $pato1 = document.getElementById("btn-pato1");
 const $pato2 = document.getElementById("btn-pato2");
@@ -341,4 +342,59 @@ async function obtenerPato2() {
   } catch (error) {
     console.log(error);
   }
+}
+*/
+
+// Ejercicio Boton1: Pinta del 1 al 100 y si es múltiplo de 3 pinta BIT, de 5 pinta Institute y de ambos pinta BITInstitute
+
+const $btn1 = document.getElementById("btn1");
+
+$btn1.addEventListener("click", btnEjemplo, { once: true });
+
+function btnEjemplo() {
+  console.log("soy un boton");
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      const num1 = document.createElement("span");
+      num1.classList.add("num1");
+      num1.innerHTML = `BITInstitute `;
+      text1.append(num1);
+    } else if (i % 3 === 0) {
+      const num1 = document.createElement("span");
+      num1.classList.add("num1");
+      num1.innerHTML = `BIT `;
+      text1.append(num1);
+    } else if (i % 5 === 0) {
+      const num1 = document.createElement("span");
+      num1.classList.add("num1");
+      num1.innerHTML = `Institute `;
+      text1.append(num1);
+    } else {
+      const num1 = document.createElement("span");
+      num1.classList.add("num1");
+      num1.innerHTML = `${i}, `;
+      text1.append(num1);
+    }
+  }
+}
+
+//Buton 2: Pedir nombre por un label input y al oprimir un boton, mostras nombre de 3 maneras, 1: En mayusculas, 2: En minusculas, 3: Primera letra en Mayuscula.
+
+const $btn2 = document.getElementById("btn2");
+$btn2.addEventListener("click", mostrarNombre);
+
+function mostrarNombre() {
+  // Obtener el nombre
+  let $nombre = document.getElementById("nombre").value; //value para que lea lo escrito
+  // Cambiarlo a Mayusculas con el UpperCase
+  let nombreMayus = `Nombre en Mayúsculas: ${$nombre.toUpperCase()}`;
+  // Minusculas con el LowerCase
+  let nombreMinus = `Nombre en Minúsculas: ${$nombre.toLowerCase()}`;
+  // Capital con charAt(0).toUpperCase() que toma la primera letra y slice(1).toLowerCase() que toma el resto desde el segundo caracter
+  let nombreCapital = `Tú Nombre: ${$nombre.charAt(0).toUpperCase()}${$nombre
+    .slice(1)
+    .toLowerCase()}`;
+  // Mostrar resultados
+  document.getElementById("text2").innerHTML =
+    nombreMayus + "<br>" + nombreMinus + "<br>" + nombreCapital;
 }
